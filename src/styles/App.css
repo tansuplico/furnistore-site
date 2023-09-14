@@ -1,0 +1,70 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  cursor: pointer;
+}
+
+.lazy {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.inner-lazy:nth-child(1),
+.inner-lazy:nth-child(2),
+.inner-lazy:nth-child(3),
+.inner-lazy:nth-child(4),
+.inner-lazy:nth-child(5) {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+  animation: progress 1.2s ease-in infinite;
+}
+
+.inner-lazy:nth-child(1) {
+  background-color: #2193b0;
+  animation-delay: 0.15s;
+}
+
+.inner-lazy:nth-child(2) {
+  background-color: #48b1bf;
+  animation-delay: 0.25s;
+}
+
+.inner-lazy:nth-child(3) {
+  background-color: #56ab2f;
+  animation-delay: 0.35s;
+}
+
+.inner-lazy:nth-child(4) {
+  background-color: #614385;
+  animation-delay: 0.45s;
+}
+
+.inner-lazy:nth-child(5) {
+  background-color: #185a9d;
+  animation-delay: 0.55s;
+}
+
+@keyframes progress {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-60px);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

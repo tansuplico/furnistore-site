@@ -1,0 +1,9 @@
+export { default as Product } from "./Product";
+export { default as Collections } from "./Collections";
+export { default as Shop } from "./Shop";
+export { default as TodayDeals } from "./TodayDeals";
+export { default as HotDeals } from "./HotDeals";
+export { default as Brand } from "./Brand";
+export { default as Blogpage } from "./Blogpage";
+export { default as Cart } from "./Cart";
+export { default as Receipt } from "./Receipt";
